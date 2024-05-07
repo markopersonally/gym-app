@@ -1,9 +1,11 @@
 import { Button } from "../StyledComponents.jsx";
 
-export default function Buttons({ children, ...props }) {
+export default function Buttons({ children, isSelected, ...props }) {
   return (
     <li>
-      <Button {...props}>{children}</Button>
+      <Button className={isSelected ? "active" : undefined} {...props}>
+        {children}
+      </Button>
     </li>
   );
 }

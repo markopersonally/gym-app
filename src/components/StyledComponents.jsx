@@ -81,6 +81,10 @@ export const Button = styled.button`
     cursor: pointer;
   }
 
+  &:hover.active {
+    background-color: #fff;
+  }
+
   &.open {
     font-size: x-large;
     text-transform: capitalize;
