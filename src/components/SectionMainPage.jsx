@@ -1,5 +1,14 @@
 import { useState } from "react";
-import { Section, Button, Form, Label } from "./StyledComponents";
+import {
+  Section,
+  Shadow,
+  DivTitle,
+  H1Style,
+  Button,
+  Form,
+  Label,
+  H2Style,
+} from "./StyledComponents";
 
 export default function SectionMainPage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -10,28 +19,36 @@ export default function SectionMainPage() {
   }
   return (
     <Section>
-      <Button
-        style={{ display: btnNone ? "block" : "none" }}
-        className="open"
-        onClick={handleOpenClick}
-      >
-        join us
-      </Button>
-      <div style={{ display: isVisible ? "block" : "none" }}>
-        <Form>
+      <Shadow>
+        <DivTitle>
+          <H1Style>welcome to gym fox!🏋️</H1Style>
           <Button
-            className="close"
-            onClick={() => setIsVisible() && setBtnNone(true)}
+            style={{ display: btnNone ? "block" : "none" }}
+            className="open"
+            onClick={handleOpenClick}
           >
-            X
+            join us &gt;
           </Button>
-          <Label>username:</Label>
-          <input type="text" />
-          <Label>password:</Label>
-          <input type="password" />
-          <Button className="send">Send</Button>
-        </Form>
-      </div>
+        </DivTitle>
+        <H2Style>
+          "As long as you fight, you are a winner." St. Augustine
+        </H2Style>
+        <div style={{ display: isVisible ? "block" : "none" }}>
+          <Form>
+            <Button
+              className="close"
+              onClick={() => setIsVisible() && setBtnNone(true)}
+            >
+              X
+            </Button>
+            <Label>username:</Label>
+            <input type="text" />
+            <Label>password:</Label>
+            <input type="password" />
+            <Button className="send">Send</Button>
+          </Form>
+        </div>
+      </Shadow>
     </Section>
   );
 }
