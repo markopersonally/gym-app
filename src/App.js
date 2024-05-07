@@ -1,5 +1,6 @@
 import Header from "./components/Header/Header";
 import SectionMainPage from "./components/SectionMainPage";
+import SectionMembership from "./components/SectionMembership/SectionMembership";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <Header />
       <main>
         <SectionMainPage />
+        <SectionMembership />
       </main>
     </>
   );
