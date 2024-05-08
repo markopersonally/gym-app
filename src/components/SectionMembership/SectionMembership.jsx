@@ -16,7 +16,7 @@ export default function SectionMembership() {
     setSelectedButton(selectedButton);
   };
 
-  let btnContent = <Paragrafh>Please, see membership offer!</Paragrafh>;
+  let btnContent = <Paragrafh>See our membership offer, please!</Paragrafh>;
 
   if (selectedOption) {
     btnContent = (

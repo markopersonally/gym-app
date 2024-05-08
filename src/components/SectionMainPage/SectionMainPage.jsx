@@ -8,7 +8,7 @@ import {
   Form,
   Label,
   H2Style,
-} from "./StyledComponents";
+} from "./SectionMainPageStyled.jsx";
 
 export default function SectionMainPage() {
   const [isVisible, setIsVisible] = useState(false);

@@ -35,6 +35,10 @@ export const Button = styled.button`
   cursor: pointer;
   transition: ease-in 0.7s;
 
+  &:hover {
+    background-color: #af412d;
+  }
+
   &.active {
     font-style: italic;
     scale: 0.9;

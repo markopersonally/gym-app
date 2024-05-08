@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import imgMainPage from "../images/man-woman.jpg";
+import imgMainPage from "../../images/man-woman.jpg";
 
 export const Shadow = styled.div`
   width: 100%;
