@@ -1,6 +1,7 @@
 import Header from "./components/Header/Header";
 import SectionGallery from "./components/SectionGallery/SectionGallery";
 import SectionMainPage from "./components/SectionMainPage/SectionMainPage";
+import SectionSmallPanel from "./components/SectionSmallPanel/SectionSmallPanel";
 import SectionMembership from "./components/SectionMembership/SectionMembership";
 
 function App() {
@@ -9,8 +10,9 @@ function App() {
       <Header />
       <main>
         <SectionMainPage />
-        <SectionMembership />
+        <SectionSmallPanel />
         <SectionGallery />
+        <SectionMembership />
       </main>
     </>
   );
