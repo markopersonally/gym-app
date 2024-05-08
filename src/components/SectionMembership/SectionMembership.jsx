@@ -1,6 +1,12 @@
 import { useState } from "react";
 import Buttons from "./Buttons";
-import { H2, ContainerUl } from "./SectionMembershipStyled.jsx";
+import {
+  H2,
+  ContainerUl,
+  Wrapper,
+  WrapperImg,
+  Paragrafh,
+} from "./SectionMembershipStyled.jsx";
 import { MEMBERSHIP_OPTIONS } from "../../data.js";
 
 export default function SectionMembership() {
@@ -10,23 +16,23 @@ export default function SectionMembership() {
     setSelectedButton(selectedButton);
   };
 
-  let btnContent = <p>Please select a topic</p>;
+  let btnContent = <Paragrafh>See our membership offer, please!</Paragrafh>;
 
   if (selectedOption) {
     btnContent = (
-      <div>
-        <img
+      <Wrapper>
+        <WrapperImg
           src={MEMBERSHIP_OPTIONS[selectedOption].image}
           alt={MEMBERSHIP_OPTIONS[selectedOption].title}
         />
         <h3>{MEMBERSHIP_OPTIONS[selectedOption].title}</h3>
         <h4>{MEMBERSHIP_OPTIONS[selectedOption].price}</h4>
-      </div>
+      </Wrapper>
     );
   }
 
   return (
-    <section>
+    <section id="membership">
       <H2>Membership</H2>
       <ContainerUl>
         <Buttons

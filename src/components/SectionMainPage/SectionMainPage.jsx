@@ -8,7 +8,7 @@ import {
   Form,
   Label,
   H2Style,
-} from "./StyledComponents";
+} from "./SectionMainPageStyled.jsx";
 
 export default function SectionMainPage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -18,7 +18,7 @@ export default function SectionMainPage() {
     setIsVisible(true) && setBtnNone(false);
   }
   return (
-    <Section>
+    <Section id="home">
       <Shadow>
         <DivTitle>
           <H1Style>welcome to gym fox!🏋️</H1Style>

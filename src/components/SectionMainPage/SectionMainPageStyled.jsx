@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import imgMainPage from "../images/man-woman.jpg";
+import imgMainPage from "../../images/man-woman.jpg";
 
 export const Shadow = styled.div`
   width: 100%;
@@ -68,7 +68,6 @@ export const DivTitle = styled.div`
 `;
 
 export const Button = styled.button`
-  background-color: #c9b8b8;
   font-size: large;
   margin: 1em;
   padding: 0.25em 1em;
@@ -77,12 +76,7 @@ export const Button = styled.button`
   transition: ease-in 1s;
 
   &:hover {
-    background: #3f3f32;
     cursor: pointer;
-  }
-
-  &:hover.active {
-    background-color: #fff;
   }
 
   &.open {
