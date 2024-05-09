@@ -1,27 +1,31 @@
-import mImg1 from "../src/images/fitness1.jpg";
-import mImg2 from "./images/fitness2.jpg";
-import mImg3 from "./images/fitness3.jpg";
-import mImg4 from "./images/fitness4.jpg";
+import icon1 from "./images/fitness1.jpg";
+import icon2 from "./images/fitness2.jpg";
+import icon3 from "./images/fitness3.jpg";
+import icon4 from "./images/fitness4.jpg";
 
-export const MEMBERSHIP_OPTIONS = {
-  oneDay: {
-    image: mImg1,
-    title: "One day",
-    price: "10$",
+export const OPTIONS = {
+  first: {
+    icon: icon1,
+    ialt: "icon1",
+    quote: "Everyone started somewhere.",
+    title: "Hit the gym and transform your body!",
   },
-  month: {
-    image: mImg2,
-    title: "One month",
-    price: "80$",
+  second: {
+    icon: icon2,
+    ialt: "icon2",
+    quote: "Fly like a butterfly, sting like a bee.",
+    title: "Get ready for an intense workout session!",
   },
-  threeMonths: {
-    image: mImg3,
-    title: "Three months",
-    price: "210$",
+  third: {
+    icon: icon3,
+    ialt: "icon3",
+    quote: "Don't give up just because it's hard.",
+    title: "Build strength and achieve your fitness goals!",
   },
-  oneYear: {
-    image: mImg4,
-    title: "One year",
-    price: "770$",
+  fourth: {
+    icon: icon4,
+    ialt: "icon4",
+    quote: "How you train is how you will fight.",
+    title: "Join our fitness community and unlock your potential!",
   },
 };

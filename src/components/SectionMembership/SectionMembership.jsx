@@ -1,66 +1,68 @@
-import { useState } from "react";
-import Buttons from "./Buttons";
 import {
   H2,
-  ContainerUl,
-  Wrapper,
-  WrapperImg,
-  Paragrafh,
+  Table,
+  THead,
+  THeadTr,
+  THeadTh,
+  TBody,
+  TBodyTr,
+  TBodyTd,
 } from "./SectionMembershipStyled.jsx";
-import { MEMBERSHIP_OPTIONS } from "../../data.js";
 
 export default function SectionMembership() {
-  const [selectedOption, setSelectedButton] = useState();
-
-  const handleSelect = (selectedButton) => {
-    setSelectedButton(selectedButton);
-  };
-
-  let btnContent = <Paragrafh>See our membership offer, please!</Paragrafh>;
-
-  if (selectedOption) {
-    btnContent = (
-      <Wrapper>
-        <WrapperImg
-          src={MEMBERSHIP_OPTIONS[selectedOption].image}
-          alt={MEMBERSHIP_OPTIONS[selectedOption].title}
-        />
-        <h3>{MEMBERSHIP_OPTIONS[selectedOption].title}</h3>
-        <h4>{MEMBERSHIP_OPTIONS[selectedOption].price}</h4>
-      </Wrapper>
-    );
-  }
-
   return (
-    <section id="membership">
+    <section>
       <H2>Membership</H2>
-      <ContainerUl>
-        <Buttons
-          isSelected={selectedOption === "oneDay"}
-          onClick={() => handleSelect("oneDay")}
-        >
-          one day
-        </Buttons>
-        <Buttons
-          isSelected={selectedOption === "month"}
-          onClick={() => handleSelect("month")}
-        >
-          one month
-        </Buttons>
-        <Buttons
-          isSelected={selectedOption === "threeMonths"}
-          onClick={() => handleSelect("threeMonths")}
-        >
-          three months{" "}
-        </Buttons>
-        <Buttons
-          isSelected={selectedOption === "oneYear"}
-          onClick={() => handleSelect("oneYear")}
-        >
-          one year
-        </Buttons>
-      </ContainerUl>
-      {btnContent}
+      <Table>
+        <THead>
+          <THeadTr>
+            <THeadTh colSpan="3">Gym Services:</THeadTh>
+          </THeadTr>
+          <THeadTr>
+            <THeadTh>Service:</THeadTh>
+            <THeadTh>Description:</THeadTh>
+            <THeadTh>Price:</THeadTh>
+          </THeadTr>
+        </THead>
+        <TBody>
+          <tr>
+            <TBodyTd>One day</TBodyTd>
+            <TBodyTd>Try and see!</TBodyTd>
+            <TBodyTd>$10</TBodyTd>
+          </tr>
+          <tr>
+            <TBodyTd className="bgc">One week</TBodyTd>
+            <TBodyTd className="bgc">
+              See all sports activities for a week!
+            </TBodyTd>
+            <TBodyTd className="bgc">$70</TBodyTd>
+          </tr>
+          <tr>
+            <TBodyTd>Month</TBodyTd>
+            <TBodyTd>Monthly pass for all activities</TBodyTd>
+            <TBodyTd>$270</TBodyTd>
+          </tr>
+          <tr>
+            <TBodyTd className="bgc">3-months</TBodyTd>
+            <TBodyTd className="bgc">
+              Three-month pass for all activities
+            </TBodyTd>
+            <TBodyTd className="bgc">$770</TBodyTd>
+          </tr>
+          <tr>
+            <TBodyTd>Year</TBodyTd>
+            <TBodyTd>One year pass for all activities</TBodyTd>
+            <TBodyTd>$1770</TBodyTd>
+          </tr>
+          <tr>
+            <TBodyTd className="bgc">Personal</TBodyTd>
+            <TBodyTd className="bgc">
+              Individual training with a trainer
+            </TBodyTd>
+            <TBodyTd className="bgc">$170</TBodyTd>
+          </tr>
+        </TBody>
+      </Table>
     </section>
   );
 }

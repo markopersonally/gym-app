@@ -1,4 +1,4 @@
-import { Button } from "./SectionMembershipStyled.jsx";
+import { Button } from "./SectionMotivationStyled.jsx";
 
 export default function Buttons({ children, isSelected, ...props }) {
   return (
