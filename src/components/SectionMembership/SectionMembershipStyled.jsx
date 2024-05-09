@@ -1,67 +1,53 @@
 import styled from "styled-components";
 
 export const H2 = styled.h2`
-  margin-top: 70px;
+  margin-top: 200px;
   text-align: center;
   font-size: xx-large;
   color: #f5deb3;
 `;
 
-export const ContainerUl = styled.ul`
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  list-style: none;
-`;
-
-export const Paragrafh = styled.p`
-  font-size: xx-large;
-  font-style: italic;
-  text-align: center;
-  color: #f5deb3;
-`;
-
-export const Button = styled.button`
+export const Table = styled.table`
+  width: 80%;
   font-size: large;
-  font-weight: bold;
+  margin-top: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
   color: #f5deb3;
-  background-color: #ff6347;
-  padding: 10px;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: ease-in 0.7s;
+  text-align: center;
+  border-radius: 20%;
+`;
 
-  &:hover {
+export const THead = styled.thead`
+  background-color: #af412d;
+  padding: 15px;
+`;
+
+export const THeadTh = styled.th`
+  text-align: center;
+  border: 1px solid #000;
+  padding: 25px;
+`;
+
+export const THeadTr = styled.tr`
+  background-color: #af412d;
+  padding: 15px;
+  text-align: center;
+  font-size: x-large;
+`;
+
+export const TBody = styled.tbody`
+  padding: 15px;
+  background-color: tomato;
+`;
+
+export const TBodyTd = styled.td`
+  padding: 15px 15px;
+  background-color: #ff6347;
+  border: 1px solid #000;
+
+  &.bgc {
     background-color: #af412d;
   }
-
-  &.active {
-    font-style: italic;
-    scale: 0.9;
-    background-color: #af412d;
-    border: 1px solid #000;
-  }
-`;
-
-export const Wrapper = styled.div`
-  border-radius: 30px;
-  background-color: #ff6347;
-  margin: 30px auto;
-  width: 500px;
-  height: 400px;
-  border: 5px solid #000;
-  text-align: center;
-  font-size: large;
-  color: #000;
-`;
-
-export const WrapperImg = styled.img`
-  margin-top: 20px;
-  background-size: cover;
-  width: 350px;
-  height: 250px;
 `;
