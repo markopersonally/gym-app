@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+export const Section = styled.section`
+  margin: 50px 0;
+  position: relative;
+  height: 100vh;
+`;
+
 export const H2 = styled.h2`
   margin-top: 200px;
   text-align: center;
@@ -10,7 +16,7 @@ export const H2 = styled.h2`
 export const Table = styled.table`
   width: 80%;
   font-size: large;
-  margin-top: 40px;
+  margin: 40px 0;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
