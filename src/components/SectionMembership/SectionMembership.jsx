@@ -1,17 +1,17 @@
 import {
+  Section,
   H2,
   Table,
   THead,
   THeadTr,
   THeadTh,
   TBody,
-  TBodyTr,
   TBodyTd,
 } from "./SectionMembershipStyled.jsx";
 
 export default function SectionMembership() {
   return (
-    <section>
+    <Section>
       <H2>Membership</H2>
       <Table>
         <THead>
@@ -63,6 +63,6 @@ export default function SectionMembership() {
           </tr>
         </TBody>
       </Table>
-    </section>
+    </Section>
   );
 }

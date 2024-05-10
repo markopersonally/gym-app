@@ -11,7 +11,7 @@ AOS.init();
 
 export default function SectionGallery() {
   return (
-    <section>
+    <section id="gallery">
       <ContainerImg>
         <Img
           data-aos="zoom-in"
