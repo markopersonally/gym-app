@@ -31,7 +31,7 @@ export default function SectionMotivation() {
   }
 
   return (
-    <section id="membership">
+    <section>
       <ContainerUl>
         <Buttons
           isSelected={selectedOption === "first"}

@@ -1,5 +1,4 @@
 import {
-  Section,
   H2,
   Wrapper,
   BoxPanel,
@@ -11,7 +10,7 @@ AOS.init();
 
 export default function SectionSmallPanel() {
   return (
-    <Section>
+    <section>
       <Wrapper>
         <H2>
           We pride ourselves on being one of the best gyms around, and here you
@@ -32,6 +31,6 @@ export default function SectionSmallPanel() {
           </BoxPanelItem>
         </BoxPanel>
       </Wrapper>
-    </Section>
+    </section>
   );
 }

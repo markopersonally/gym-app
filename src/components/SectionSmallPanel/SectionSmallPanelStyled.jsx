@@ -1,10 +1,5 @@
 import styled from "styled-components";
 
-export const Section = styled.section`
-    margin: 150px 0;
-    height: 20vh;
-`
-
 export const H2 = styled.h2`
   text-align: center;
   font-size: xx-large;
@@ -12,11 +7,8 @@ export const H2 = styled.h2`
 `;
 
 export const Wrapper = styled.div`
-  width: 1000px;
+  margin-top: 70px;
   padding: 20px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
   border-radius: 20px;
   box-shadow: 2px 2px 40px -11px #ff6347;
 `;

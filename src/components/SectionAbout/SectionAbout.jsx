@@ -14,6 +14,7 @@ export default function SectionAbout() {
           creating an inspiring environment for all our clients. Join our
           success story and achieve your fitness goals!
         </Paragraph>
+        <Photo></Photo>
       </Container>
     </section>
   );

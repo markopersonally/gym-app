@@ -1,4 +1,5 @@
-import { ContainerImg, Img } from "./SectionGalleryStyled.jsx";
+import SectionMotivation from "../SectionMotivation/SectionMotivation.jsx";
+import { ContainerImg, Img, H2 } from "./SectionGalleryStyled.jsx";
 import img1 from "../../images/gallery1.jpg";
 import img2 from "../../images/gallery2.jpg";
 import img3 from "../../images/gallery3.jpg";
@@ -12,6 +13,8 @@ AOS.init();
 export default function SectionGallery() {
   return (
     <section id="gallery">
+      <H2>gallery</H2>
+      <SectionMotivation />
       <ContainerImg>
         <Img
           data-aos="zoom-in"
