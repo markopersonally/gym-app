@@ -1,12 +1,8 @@
 import styled from "styled-components";
 
-export const Section = styled.section`
-  margin: 50px 0;
-  position: relative;
-  height: 100vh;
-`;
-
 export const H2 = styled.h2`
+  border-top: 3px solid #fff;
+  padding-top: 70px;
   margin-top: 200px;
   text-align: center;
   font-size: xx-large;
@@ -14,12 +10,9 @@ export const H2 = styled.h2`
 `;
 
 export const Table = styled.table`
-  width: 80%;
+  padding: 50px 0;
+  width: 100%;
   font-size: large;
-  margin: 40px 0;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
   color: #f5deb3;
   text-align: center;
   border-radius: 20%;

@@ -2,6 +2,8 @@ import styled from "styled-components";
 import photo from "../../images/garage.jpg";
 
 export const H2 = styled.h2`
+  border-top: 3px solid #fff;
+  padding-top: 70px;
   margin-top: 70px;
   text-transform: uppercase;
   text-align: center;
@@ -11,12 +13,12 @@ export const H2 = styled.h2`
 `;
 
 export const Container = styled.div`
-  background-image: url(${photo});
-  background-repeat: no-repeat;
-  background-position: center;
+  padding: 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
 `;
 
 export const Paragraph = styled.p`
@@ -25,4 +27,13 @@ export const Paragraph = styled.p`
   text-align: center;
   color: #f5deb3;
   letter-spacing: 1px;
+`;
+
+export const Photo = styled.div`
+  height: 350px;
+  width: 500px;
+  background-image: url(${photo});
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
 `;

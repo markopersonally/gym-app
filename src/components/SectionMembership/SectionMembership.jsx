@@ -1,5 +1,4 @@
 import {
-  Section,
   H2,
   Table,
   THead,
@@ -11,7 +10,7 @@ import {
 
 export default function SectionMembership() {
   return (
-    <Section>
+    <section id="membership">
       <H2>Membership</H2>
       <Table>
         <THead>
@@ -63,6 +62,6 @@ export default function SectionMembership() {
           </tr>
         </TBody>
       </Table>
-    </Section>
+    </section>
   );
 }

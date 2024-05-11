@@ -1,6 +1,15 @@
 import styled from "styled-components";
 import imgMainPage from "../../images/man-woman.jpg";
 
+export const Section = styled.section`
+  width: 100%;
+  height: 100vh;
+  background-image: url(${imgMainPage});
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+`;
+
 export const Shadow = styled.div`
   width: 100%;
   height: 100vh;
@@ -112,13 +121,22 @@ export const Form = styled.form`
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: #4e3f3f;
+  background-color: #000000e0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 3px solid #000;
   border-radius: 20px;
+`;
+
+export const FormTitle = styled.div`
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  color: #f5deb3;
+  text-align: center;
+  font-size: large;
 `;
 
 export const Label = styled.label`
@@ -130,11 +148,16 @@ export const Label = styled.label`
   border-bottom: 1px solid #f5deb3;
 `;
 
-export const Section = styled.section`
-  width: 100%;
-  height: 100vh;
-  background-image: url(${imgMainPage});
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+export const Input = styled.input`
+  width: 200px;
+  margin: 5px 0;
+  padding: 10px;
+  color: #f5deb3;
+  background-color: #322d2d;
+  border: none;
+  border-radius: 10px;
+
+  &:focus {
+    border: 1px solid tomato;
+  }
 `;

@@ -8,6 +8,8 @@ import {
   Form,
   Label,
   H2Style,
+  FormTitle,
+  Input,
 } from "./SectionMainPageStyled.jsx";
 
 export default function SectionMainPage() {
@@ -17,6 +19,7 @@ export default function SectionMainPage() {
   function handleOpenClick() {
     setIsVisible(true) && setBtnNone(false);
   }
+
   return (
     <Section id="home">
       <Shadow>
@@ -35,16 +38,19 @@ export default function SectionMainPage() {
         </H2Style>
         <div style={{ display: isVisible ? "block" : "none" }}>
           <Form>
-            <Button
-              className="close"
-              onClick={() => setIsVisible() && setBtnNone(true)}
-            >
-              X
-            </Button>
+            <FormTitle>
+              <h3>🎗 Join our team! 🎗</h3>
+              <Button
+                className="close"
+                onClick={() => setIsVisible() && setBtnNone(true)}
+              >
+                X
+              </Button>
+            </FormTitle>
             <Label>username:</Label>
-            <input type="text" />
+            <Input type="text" placeholder="Write your nickname..." />
             <Label>password:</Label>
-            <input type="password" />
+            <Input type="password" placeholder="Write your password..." />
             <Button className="send">Send</Button>
           </Form>
         </div>
