@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   HeaderStyle,
   DivContainerLogo,
@@ -5,15 +6,26 @@ import {
   LinkWrapper,
   LinkStyled,
   LinkAStyled,
+  Nav,
+  NavMobile,
+  NavMobileBox,
+  FaBarsStyled,
 } from "./HeaderStyled.jsx";
+import { FaBars } from "react-icons/fa";
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  function toggleMenu() {
+    setIsOpen(!isOpen);
+  }
+
   return (
     <HeaderStyle>
-      <DivContainerLogo>
-        <Logo />
-      </DivContainerLogo>
-      <nav>
+      <Nav>
+        <DivContainerLogo>
+          <Logo />
+        </DivContainerLogo>
         <LinkWrapper>
           <LinkStyled>
             <LinkAStyled href="#home">home</LinkAStyled>
@@ -31,7 +43,36 @@ export default function Header() {
             <LinkAStyled href="#contact">contact</LinkAStyled>
           </LinkStyled>
         </LinkWrapper>
-      </nav>
+      </Nav>
+      <NavMobile>
+        <NavMobileBox>
+          <DivContainerLogo>
+            <Logo className="mobile" />
+          </DivContainerLogo>
+          <FaBarsStyled onClick={toggleMenu}>
+            <FaBars />
+          </FaBarsStyled>
+        </NavMobileBox>
+        {isOpen && (
+          <LinkWrapper className={`nav-mobile ${isOpen ? "" : "display-none"}`}>
+            <LinkStyled>
+              <LinkAStyled href="#home">home</LinkAStyled>
+            </LinkStyled>
+            <LinkStyled>
+              <LinkAStyled href="#membership">membership</LinkAStyled>
+            </LinkStyled>
+            <LinkStyled>
+              <LinkAStyled href="#gallery">gallery</LinkAStyled>
+            </LinkStyled>
+            <LinkStyled>
+              <LinkAStyled href="#about">about us</LinkAStyled>
+            </LinkStyled>
+            <LinkStyled>
+              <LinkAStyled href="#contact">contact</LinkAStyled>
+            </LinkStyled>
+          </LinkWrapper>
+        )}
+      </NavMobile>
     </HeaderStyle>
   );
 }
