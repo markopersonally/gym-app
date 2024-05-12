@@ -11,6 +11,7 @@ export const H2 = styled.h2`
 `;
 
 export const ContainerImg = styled.div`
+  width: 100%;
   margin-top: 150px;
   display: flex;
   flex-wrap: wrap;

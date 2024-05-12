@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ContainerUl = styled.ul`
   margin-top: 50px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -50,6 +51,10 @@ export const Wrapper = styled.div`
   text-align: center;
   font-size: large;
   color: #f5deb3;
+
+  @media (max-width: 850px) {
+    width: 100%;
+  }
 `;
 
 export const Icon = styled.img`

@@ -2,7 +2,6 @@ import styled from "styled-components";
 import imgMainPage from "../../images/man-woman.jpg";
 
 export const Section = styled.section`
-  width: 100%;
   height: 100vh;
   background-image: url(${imgMainPage});
   background-size: cover;
@@ -12,7 +11,7 @@ export const Section = styled.section`
 
 export const Shadow = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #0000007c;
   position: absolute;
   left: 50%;
@@ -64,6 +63,10 @@ export const H2Style = styled.h2`
       color: #f5deb3;
     }
   }
+
+  @media (max-width: 550px) {
+    top: 37%;
+  }
 `;
 
 export const DivTitle = styled.div`
@@ -74,6 +77,12 @@ export const DivTitle = styled.div`
   left: 50%;
   bottom: 10%;
   transform: translateX(-50%);
+
+  @media (max-width: 550px) {
+    gap: 0;
+    flex-wrap: wrap;
+    bottom: 2%;
+  }
 `;
 
 export const Button = styled.button`
@@ -127,6 +136,13 @@ export const Form = styled.form`
   align-items: center;
   flex-direction: column;
   border-radius: 20px;
+  z-index: 99;
+
+  @media (max-width: 850px) {
+    width: 100%;
+    z-index: 2;
+    height: 100vh;
+  }
 `;
 
 export const FormTitle = styled.div`

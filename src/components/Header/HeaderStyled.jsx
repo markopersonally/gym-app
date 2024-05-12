@@ -15,6 +15,16 @@ export const HeaderStyle = styled.header`
   z-index: 1;
 `;
 
+export const Nav = styled.nav`
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  @media (max-width: 850px) {
+    display: none;
+  }
+`;
+
 export const DivContainerLogo = styled.div`
   width: 100px;
   height: 100px;
@@ -32,6 +42,11 @@ export const Logo = styled.div`
     background-color: #af412d;
     cursor: pointer;
   }
+
+  &.mobile {
+    width: 70px;
+    height: 70px;
+  }
 `;
 
 export const LinkWrapper = styled.ul`
@@ -39,6 +54,13 @@ export const LinkWrapper = styled.ul`
   display: flex;
   justify-content: center;
   gap: 20px;
+
+  &.nav-mobile {
+    padding: 50px;
+    background-color: #000;
+    flex-direction: column;
+    text-align: center;
+  }
 `;
 
 export const LinkStyled = styled.li`
@@ -54,6 +76,10 @@ export const LinkStyled = styled.li`
     transition: all 1s;
     cursor: pointer;
   }
+
+  .nav-mobile {
+    justify-content: center;
+  }
 `;
 
 export const LinkAStyled = styled.a`
@@ -61,4 +87,30 @@ export const LinkAStyled = styled.a`
   text-transform: uppercase;
   text-decoration: none;
   color: #f5deb3;
+`;
+
+export const NavMobile = styled.nav`
+  display: none;
+
+  @media (max-width: 850px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+`;
+
+export const NavMobileBox = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const FaBarsStyled = styled.div`
+  font-size: 70px;
+
+  &:hover {
+    color: #af412d;
+    cursor: pointer;
+    transition: all 1s;
+  }
 `;

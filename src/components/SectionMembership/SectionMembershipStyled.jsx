@@ -16,6 +16,11 @@ export const Table = styled.table`
   color: #f5deb3;
   text-align: center;
   border-radius: 20%;
+
+  @media (max-width: 850px) {
+    width: 99%;
+    font-size: medium;
+  }
 `;
 
 export const THead = styled.thead`
