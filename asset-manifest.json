@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/gym-app/static/css/main.0bfa22e2.css",
+    "main.js": "/gym-app/static/js/main.67e15ead.js",
+    "static/media/gallery6.jpg": "/gym-app/static/media/gallery6.fe938e9e089e696e3513.jpg",
+    "static/media/gallery1.jpg": "/gym-app/static/media/gallery1.c0f5b6f8559714ba57a1.jpg",
+    "static/media/gallery5.jpg": "/gym-app/static/media/gallery5.1ef1c6bf55a5f7cabb39.jpg",
+    "static/media/man-woman.jpg": "/gym-app/static/media/man-woman.9aa1c1bed8f763a32ace.jpg",
+    "static/media/gallery4.jpg": "/gym-app/static/media/gallery4.e4bd38b1ac8b28056195.jpg",
+    "static/media/gallery3.jpg": "/gym-app/static/media/gallery3.2b28f46f1fec48428b42.jpg",
+    "static/media/fitness4.jpg": "/gym-app/static/media/fitness4.95a35a90a0263369c317.jpg",
+    "static/media/gallery2.jpg": "/gym-app/static/media/gallery2.f0b1446dca5491efd34a.jpg",
+    "static/media/garage.jpg": "/gym-app/static/media/garage.4cf0bb43bf36d8f08a02.jpg",
+    "static/media/fitness1.jpg": "/gym-app/static/media/fitness1.dedd9764396b9001733b.jpg",
+    "static/media/logo-fox.jpg": "/gym-app/static/media/logo-fox.c0d4b24be2a7c83fb6b0.jpg",
+    "static/media/fitness2.jpg": "/gym-app/static/media/fitness2.437b6b95f15f400cd768.jpg",
+    "static/media/fitness3.jpg": "/gym-app/static/media/fitness3.f471c67e9b7d18b90a75.jpg",
+    "index.html": "/gym-app/index.html",
+    "main.0bfa22e2.css.map": "/gym-app/static/css/main.0bfa22e2.css.map",
+    "main.67e15ead.js.map": "/gym-app/static/js/main.67e15ead.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0bfa22e2.css",
+    "static/js/main.67e15ead.js"
+  ]
+}
