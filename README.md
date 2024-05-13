@@ -9,8 +9,8 @@
 
 ##How to use??
 ### In your terminal:
-+git clone https://github.com/markopersonally/gym-app.git
-+cd gym-app
-+npm install node
-+npm install aos
-+npm install styled-components
++ git clone https://github.com/markopersonally/gym-app.git
++ cd gym-app
++ npm install node
++ npm install aos
++ npm install styled-components
