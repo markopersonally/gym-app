@@ -7,6 +7,8 @@ export const H2 = styled.h2`
 `;
 
 export const Wrapper = styled.div`
+  margin: auto;
+  width: 90%;
   margin-top: 70px;
   padding: 20px;
   border-radius: 20px;
