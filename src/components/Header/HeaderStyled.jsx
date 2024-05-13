@@ -3,7 +3,6 @@ import logo from "../../images/logo-fox.jpg";
 
 export const HeaderStyle = styled.header`
   width: 100%;
-  max-width: 1400px;
   position: absolute;
   top: 25px;
   left: 50%;

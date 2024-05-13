@@ -2,16 +2,17 @@ import styled from "styled-components";
 import imgMainPage from "../../images/man-woman.jpg";
 
 export const Section = styled.section`
+  width: 100%;
   height: 100vh;
   background-image: url(${imgMainPage});
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
 `;
 
 export const Shadow = styled.div`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #0000007c;
   position: absolute;
   left: 50%;
